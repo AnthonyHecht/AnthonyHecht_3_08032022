@@ -1,0 +1,19 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "sass for p3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aydeguegayr/AnthonyHecht_3_08032022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aydeguegayr/AnthonyHecht_3_08032022/issues"
+  },
+  "homepage": "https://github.com/Aydeguegayr/AnthonyHecht_3_08032022#readme"
+}

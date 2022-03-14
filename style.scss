@@ -1,0 +1,95 @@
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$background: #f6f6f6;
+
+@font-face {
+    font-family: 'roboto';
+    src: url(polices/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url(polices/Shrikhand-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+/* HEADER */
+body {
+    background-color: $background;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    & i{
+        font-size: larger;
+    }
+    & a {
+        color: black;
+    }
+}
+
+h1 {
+    font-family: 'shrikhand';
+    text-align: center;
+}
+
+.logo_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* MAIN index */
+#localisation {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(236, 234, 234);
+    box-shadow: 0px 1px 3px rgb(194, 194, 194) inset ;
+    & i {
+        margin-right: 20px;
+    }
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    & h2 {
+        margin: 0 60px 10px 60px;
+        text-align: center;             /* font-weight ? */
+    }
+    & p {
+        margin: 0 30px 20px 30px;
+        text-align: center;
+        color: rgb(104, 104, 104);
+    }
+
+    .btn {
+        background-image: linear-gradient($secondary, $primary);
+        height: 40px;
+        width: 200px;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 3px 3px 3px (darken($color: $background, $amount: 20%));
+        transition: 250ms;
+        &:hover {
+            background-image: linear-gradient((lighten($color: $secondary, $amount: 5%)), (lighten($color: $primary, $amount: 5%)));
+            box-shadow: 6px 6px 4px (darken($color: $background, $amount: 20%));
+        }
+    }
+}
