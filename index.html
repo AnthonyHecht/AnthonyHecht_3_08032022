@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="style.css" />
     <script src="https://kit.fontawesome.com/bcdfd88b49.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+      crossorigin="anonymous"/>
     <title>OhMyFood</title>
 </head>
 <body>
     <header>
-            <h1>ohmyfood</h1>
+            <h1 id="title_index">ohmyfood</h1>
     </header>
     <main>
         <div id="localisation">
@@ -22,7 +27,85 @@
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <a href="#"><button class="btn">Explorer nos restaurants</button></a>
         </div>
+        <aside>
+            <h2>Fonctionnement</h2>
+            <div id="fonctionnement">
+                <div class="fonction">
+                    <div class="number">1</div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="fonction">
+                    <div class="number">2</div>
+                    <i class="fa-solid fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="fonction">
+                    <div class="number">3</div>
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+
+            </div>
+        </aside>
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <div class="card">
+                <a href="page3.html">
+                <div class="card_img"><img src="images/lapalette.png" alt="La palette du goût"></div>
+                <div class="card_body">
+                    <div class="card_body_title">
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <i class="bi bi-heart"></i>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="page2.html">
+                <div class="card_img"><img src="images/lanote.png" alt="La note enchantée"></div>
+                <div class="card_body">
+                    <div class="card_body_title">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <i class="bi bi-heart"></i>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="page1.html">
+                <div class="card_img"><img src="images/alafrançaise.png" alt="À la française"></div>
+                <div class="card_body">
+                    <div class="card_body_title">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <i class="bi bi-heart"></i>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="page4.html">
+                <div class="card_img"><img src="images/ledelice.png" alt="Le délice des sens"></div>
+                <div class="card_body">
+                    <div class="card_body_title">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <i class="bi bi-heart"></i>
+                </div>
+                </a>
+            </div>
+        </section>
     </main>
-    
+    <footer>
+        <h3>ohmyfood</h3>
+        <i class="fa-solid fa-utensils"></i><p>Proposer un restaurant</p>
+        <i class="fa-solid fa-handshake-angle"></i><p>Devenir partenaire</p>
+        <p>Mentions légales</p>
+        <p><a href="mailto: ohmyfood@gmail.com">Contact</a></p>
+    </footer>    
 </body>
 </html>

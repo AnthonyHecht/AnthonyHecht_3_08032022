@@ -3,6 +3,10 @@ $secondary: #ff79da;
 $tertiary: #99e2d0;
 $background: #f6f6f6;
 
+@mixin box-shadow {
+    box-shadow: 3px 3px 3px (darken($color: $background, $amount: 20%));
+}
+
 @font-face {
     font-family: 'roboto';
     src: url(polices/Roboto-Regular.ttf);
@@ -27,26 +31,42 @@ body {
 header {
     width: 100%;
     height: 50px;
-    padding: 20px 20px 0 20px;
-    & i{
-        font-size: larger;
-    }
-    & a {
-        color: black;
-    }
-}
-
-h1 {
-    font-family: 'shrikhand';
-    text-align: center;
 }
 
 .logo_header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    & i{
+        font-size: larger;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    & a {
+        color: black;
+    }
+    & h1 {
+        margin: auto;
+        margin-top: 15px;
+        font-weight: lighter;
+    }
 }
+
+#title_index {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'shrikhand';
+    font-size: xx-large;
+}
+h2 {
+    font-size: 1.8em;
+}
+
+
 
 /* MAIN index */
 #localisation {
@@ -67,29 +87,241 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 60px 0;
     & h2 {
         margin: 0 60px 10px 60px;
-        text-align: center;             /* font-weight ? */
+        text-align: center;
     }
     & p {
         margin: 0 30px 20px 30px;
         text-align: center;
         color: rgb(104, 104, 104);
     }
+}
 
-    .btn {
-        background-image: linear-gradient($secondary, $primary);
-        height: 40px;
-        width: 200px;
+.btn {
+    background-image: linear-gradient($secondary, $primary);
+    height: 50px;
+    width: 200px;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    @include box-shadow;
+    transition: 250ms;
+    &:hover {
+        background-image: linear-gradient((lighten($color: $secondary, $amount: 5%)), (lighten($color: $primary, $amount: 5%)));
+        box-shadow: 6px 6px 4px (darken($color: $background, $amount: 20%));
+    }
+}
+
+aside {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    & h2 {
+        margin-left: 20px;
+    }
+}
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.fonction {
+    background-color: $background;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 30px 0 30px 0;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    @include box-shadow;
+    & .fa-solid {
+        margin-right: 30px;
+        margin-left: 25px;
+        color: rgb(104, 104, 104);
+    }
+    &:hover .fa-solid {
+        color: #9356dc;
+    }
+
+
+}
+
+.number {
+    background-color: #9356dc;
+    color: white;
+    font-weight: 100;
+    font-size: smaller;
+    text-align: center;
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: -10px;
+    padding-top: 4px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+    height: 266px;
+    margin-top: 15px;
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+.menus {
+    width: 100%;
+    background-color: $background;
+    border-radius: 25px;
+    padding-top: 30px;
+    margin-top: -20px;
+    z-index: 2;
+    & h1 {
+        text-align: left;
+        margin-left: 7.6%;
+        font-weight: lighter;
+    }
+    & h3 {
+        margin-left: 6.8%;
+        width: 10%;
+        margin-top: 30px;
+        font-weight: lighter;
+        border-bottom: 3px solid $tertiary;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & i {
+        font-size: x-large;
+        margin-right: 40px;
+    }
+}
+
+.plat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    width: 90%;
+    margin: 10px 5% 5% 5%;
+    padding: 25px 0 25px 0;
+    border-radius: 25px;
+    @include box-shadow;
+    & h4 {
+        font-size: larger;
+        margin-left: 3%;
+    }
+    & p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 30px 0 3%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: rgb(56, 54, 54);
+    color: white;
+    margin-top: 70px;
+    padding: 20px 0 20px 20px;
+    & i {
+        float: left;
+        margin-right: 10px;
+    }
+    & .fa-utensils {
+        margin-right: 15px;
+    }
+    & h3 {
+        font-family: 'shrikhand';
+        font-weight: lighter;
+        font-size: larger;
+        margin-bottom: 20px;
+    }
+    & p {
+        margin-bottom: 10px;
+    }
+    & a {
+        text-decoration: none;
         color: white;
-        border: none;
-        border-radius: 30px;
-        box-shadow: 3px 3px 3px (darken($color: $background, $amount: 20%));
-        transition: 250ms;
-        &:hover {
-            background-image: linear-gradient((lighten($color: $secondary, $amount: 5%)), (lighten($color: $primary, $amount: 5%)));
-            box-shadow: 6px 6px 4px (darken($color: $background, $amount: 20%));
+    }
+}
+#restaurants {
+    width: 100%;
+    & h2 {
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+}
+.card {
+    width: 90%;
+    height: 340px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    @include box-shadow;
+    & a {
+        text-decoration: none;
+        color: black;
+        border-radius: inherit;
+        height: 340px;
+    }
+    &_img {
+        width: 100%;
+        height: 260px;
+        border-radius: inherit;
+        & img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    &_body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        &_title {
+            font-size: large;
+            & h3, p {
+                margin-bottom: 10px;
+                margin-left: 15px;
+            }
+        }
+        & i {
+            font-size: xx-large;
+            margin-right: 20px;
+            margin-bottom: 10px;
         }
     }
 }
