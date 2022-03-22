@@ -47,6 +47,18 @@ header {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .logo_header i {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .logo_header i {
+    font-size: 2em;
+  }
+}
+
 .logo_header a {
   color: black;
 }
@@ -58,6 +70,7 @@ header {
 }
 
 #title_index {
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -70,7 +83,6 @@ h2 {
   font-size: 1.8em;
 }
 
-/* MAIN index */
 #localisation {
   height: 45px;
   display: -webkit-box;
@@ -153,6 +165,18 @@ aside h2 {
   margin-left: 20px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  aside h2 {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  aside h2 {
+    margin-left: 60px;
+  }
+}
+
 #fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +189,24 @@ aside h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #fonctionnement {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #fonctionnement {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 60px;
+  }
 }
 
 .fonction {
@@ -184,6 +226,18 @@ aside h2 {
   border-radius: 25px;
   -webkit-box-shadow: 3px 3px 3px #c3c3c3;
           box-shadow: 3px 3px 3px #c3c3c3;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .fonction {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .fonction {
+    width: 60%;
+  }
 }
 
 .fonction .fa-solid {
@@ -225,12 +279,36 @@ main {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 993px) {
+  .banner {
+    height: 400px;
+  }
+}
+
 .banner img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title i {
+  font-size: x-large;
+  margin-right: 40px;
 }
 
 .menus {
@@ -256,22 +334,24 @@ main {
   border-bottom: 3px solid #99e2d0;
 }
 
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 993px) {
+  .liste_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.title i {
-  font-size: x-large;
-  margin-right: 40px;
+@media screen and (min-width: 993px) {
+  .menu {
+    width: 50%;
+  }
 }
 
 .plat {
@@ -290,6 +370,9 @@ main {
   margin: 10px 5% 5% 5%;
   padding: 25px 0 25px 0;
   border-radius: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   -webkit-box-shadow: 3px 3px 3px #c3c3c3;
           box-shadow: 3px 3px 3px #c3c3c3;
 }
@@ -358,13 +441,41 @@ footer a {
   color: white;
 }
 
+#resto_title {
+  margin-left: 5%;
+  margin-top: 50px;
+}
+
 #restaurants {
   width: 100%;
 }
 
-#restaurants h2 {
-  margin-left: 5%;
-  margin-top: 50px;
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .card {
@@ -380,8 +491,21 @@ footer a {
           flex-direction: column;
   background-color: white;
   border-radius: 20px;
+  position: relative;
   -webkit-box-shadow: 3px 3px 3px #c3c3c3;
           box-shadow: 3px 3px 3px #c3c3c3;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .card {
+    width: 40%;
+  }
 }
 
 .card a {
@@ -405,6 +529,18 @@ footer a {
   border-radius: inherit;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.card .new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  width: 20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 .card_body {
@@ -437,5 +573,22 @@ footer a {
   font-size: xx-large;
   margin-right: 20px;
   margin-bottom: 10px;
+}
+
+.card_body i .fill {
+  background-color: #9356dc;
+  height: 1em;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear 2s;
+  transition: opacity 0.3s linear 2s;
+}
+
+.card_body i .fill:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  -webkit-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
 }
 /*# sourceMappingURL=style.css.map */

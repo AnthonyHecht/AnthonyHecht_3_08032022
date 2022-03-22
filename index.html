@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/bcdfd88b49.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
@@ -25,7 +25,7 @@
         <div id="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <a href="#"><button class="btn">Explorer nos restaurants</button></a>
+            <a href="#restaurants"><button class="btn">Explorer nos restaurants</button></a>
         </div>
         <aside>
             <h2>Fonctionnement</h2>
@@ -48,23 +48,26 @@
 
             </div>
         </aside>
+        <h2 id="resto_title">Restaurants</h2>
         <section id="restaurants">
-            <h2>Restaurants</h2>
+            
             <div class="card">
                 <a href="page3.html">
                 <div class="card_img"><img src="images/lapalette.png" alt="La palette du goût"></div>
+                <div class="new">Nouveau</div>
                 <div class="card_body">
                     <div class="card_body_title">
                         <h3>La palette du goût</h3>
                         <p>Ménilmontant</p>
                     </div>
-                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-heart"><div class="fill"></div></i>
                 </div>
                 </a>
             </div>
             <div class="card">
                 <a href="page2.html">
                 <div class="card_img"><img src="images/lanote.png" alt="La note enchantée"></div>
+                <div class="new">Nouveau</div>
                 <div class="card_body">
                     <div class="card_body_title">
                         <h3>La note enchantée</h3>
