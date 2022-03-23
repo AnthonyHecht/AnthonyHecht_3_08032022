@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'roboto';
   src: url(polices/Roboto-Regular.ttf);
@@ -14,9 +21,141 @@
   font-family: 'roboto';
 }
 
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #9356dc;
+  }
+  25% {
+    stroke: #99e2d0;
+  }
+  50% {
+    stroke: #ff79da;
+  }
+  75% {
+    stroke: #99e2d0;
+  }
+  100% {
+    stroke: #9356dc;
+  }
+}
+
+@keyframes colors {
+  0% {
+    stroke: #9356dc;
+  }
+  25% {
+    stroke: #99e2d0;
+  }
+  50% {
+    stroke: #ff79da;
+  }
+  75% {
+    stroke: #99e2d0;
+  }
+  100% {
+    stroke: #9356dc;
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+            transform: rotate(450deg);
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@keyframes cssAnimation {
+  to {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
 /* HEADER */
 body {
   background-color: #f6f6f6;
+}
+
+#loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f6f6f6;
+  -webkit-animation: cssAnimation 0s ease-in 2s forwards;
+          animation: cssAnimation 0s ease-in 2s forwards;
+}
+
+#loading .spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+          animation: rotator 1.4s linear infinite;
+  position: relative;
+  left: calc(50% - 65px / 2);
+  top: calc(50% - 65px / 2);
+}
+
+#loading .path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+          animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
 }
 
 header {
@@ -260,7 +399,7 @@ aside h2 {
   height: 28px;
   border-radius: 50%;
   margin-left: -10px;
-  padding-top: 4px;
+  padding-top: 3px;
 }
 
 main {
@@ -569,26 +708,51 @@ footer a {
   margin-left: 15px;
 }
 
-.card_body i {
-  font-size: xx-large;
-  margin-right: 20px;
-  margin-bottom: 10px;
+.icons {
+  display: -ms-grid;
+  display: grid;
+  width: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card_body i .fill {
-  background-color: #9356dc;
-  height: 1em;
-  opacity: 1;
-  -webkit-transition: opacity 0.3s linear 2s;
-  transition: opacity 0.3s linear 2s;
+.icons .icon {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 30;
+  cursor: pointer;
+  position: relative;
 }
 
-.card_body i .fill:hover {
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
-  background-image: linear-gradient(#ff93e1, #a16be0);
-  -webkit-transform: translateY(-0.5em);
-          transform: translateY(-0.5em);
+.icons .icon svg {
+  overflow: visible;
+  width: 2rem;
+}
+
+.icons .icon .heart-main:hover {
+  -webkit-animation: fill-animation 1000ms ease-in-out forwards;
+          animation: fill-animation 1000ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fill-animation {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #ff79da;
+  }
+}
+
+@keyframes fill-animation {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #ff79da;
+  }
 }
 /*# sourceMappingURL=style.css.map */
