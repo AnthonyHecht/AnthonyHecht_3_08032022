@@ -353,10 +353,13 @@ main {
     &:hover > .plat_icon {
         transform: translateX(0px);
     }
+    &:hover > .plat_title {
+        
+    }
     &:hover i {
         transform: rotate(360deg);
     }
-    &:hover strong {
+    &:hover > .plat_prix {
         transform:translateX(-50px);
     }
     &_title {
@@ -368,17 +371,19 @@ main {
         justify-content: center;
         margin-left: 10px;
         margin-right: 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         overflow: hidden;
-        transform-origin: left;
-        transition: 330ms ease-in-out;
         & p {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            & strong {
-                transition: 330ms ease-in-out;
-            }
+            margin-top: 5px;
         }
+    }
+    &_prix {
+        transition: 330ms ease-in-out;
+        margin-right: -40px;
+        width: 10%;
+        height: 100%;
+        background-color: white;
     }
     &_icon {
         background-color: $tertiary;

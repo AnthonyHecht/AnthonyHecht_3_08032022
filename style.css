@@ -527,7 +527,7 @@ main {
           transform: rotate(360deg);
 }
 
-.plat:hover strong {
+.plat:hover > .plat_prix {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
 }
@@ -548,29 +548,22 @@ main {
           justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: 330ms ease-in-out;
-  transition: 330ms ease-in-out;
 }
 
 .plat_title p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-top: 5px;
 }
 
-.plat_title p strong {
+.plat_prix {
   -webkit-transition: 330ms ease-in-out;
   transition: 330ms ease-in-out;
+  margin-right: -40px;
+  width: 10%;
+  height: 100%;
+  background-color: white;
 }
 
 .plat_icon {
