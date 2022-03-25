@@ -1,0 +1,79 @@
+.banner {
+    width: 100%;
+    height: 266px;
+    margin-top: 15px;
+    @include desktop {
+        height: 400px;
+    }
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    & i {
+        font-size: x-large;
+        margin-right: 40px;
+    }
+}
+
+.menus {
+    width: 100%;
+    background-color: $background;
+    border-radius: 25px;
+    padding-top: 30px;
+    margin-top: -20px;
+    z-index: 2;
+    & h1 {
+        text-align: left;
+        margin-left: 7.6%;
+        font-weight: lighter;
+    }
+    & h3 {
+        margin-left: 6.8%;
+        width: 10%;
+        margin-top: 30px;
+        font-weight: lighter;
+        border-bottom: 3px solid $tertiary;
+    }
+}
+
+.liste_menu {
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.menu {
+    padding-left: 10px;
+    padding-right: 10px;
+    animation: itemappear 1s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    @include desktop {
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@for $i from 1 to 3 {
+    .delay-#{$i} {
+        animation-delay: #{$i/6}s;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

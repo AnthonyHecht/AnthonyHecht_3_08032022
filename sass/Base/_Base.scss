@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'roboto';
+    src: url(polices/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url(polices/Shrikhand-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}

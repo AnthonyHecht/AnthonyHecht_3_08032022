@@ -15,15 +15,15 @@
 </head>
 
 <body>
-    <header>
-            <h1 id="title_index">ohmyfood</h1>
-    </header>
-    <main>
-        <div id="loading">
+    <div id="loading">
         <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
             <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
          </svg>
-        </div>
+    </div>
+    <header>
+            <h1 id="title_index">ohmyfood</h1>
+    </header>
+    <main>        
         <div id="localisation">
             <i class="fa-solid fa-location-dot"></i>
             <p>Paris, Belleville</p>
@@ -31,7 +31,7 @@
         <div id="presentation">
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <a href="#restaurants"><button class="btn">Explorer nos restaurants</button></a>
+            <a class="btn" href="#restaurants">Explorer nos restaurants</a>
         </div>
         <aside>
             <h2>Fonctionnement</h2>
@@ -67,11 +67,17 @@
                         <p>Ménilmontant</p>
                     </div>
                     <div class="icons">
-                    <div class="icon">
-                        <svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        </svg>
-                      </div>
+                        <div class="icon">
+                            <svg class="heart-main" viewBox="0 0 512 512" width="100">
+                                <defs>
+                                    <linearGradient id="gradient" gradientTransform="rotate(90)">
+                                        <stop offset="5%"  stop-color="#9356dc" />
+                                        <stop offset="95%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 </a>
@@ -87,7 +93,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
+                            <svg class="heart-main" viewBox="0 0 512 512" width="100">
                               <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                             </svg>
                           </div>
@@ -105,7 +111,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
+                            <svg class="heart-main" viewBox="0 0 512 512" width="100">
                               <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                             </svg>
                           </div>
@@ -123,7 +129,7 @@
                     </div>
                     <div class="icons">
                         <div class="icon">
-                            <svg class="heart-main" viewBox="0 0 512 512" width="100" title="heart">
+                            <svg class="heart-main" viewBox="0 0 512 512" width="100">
                               <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                             </svg>
                           </div>
@@ -138,7 +144,7 @@
         <i class="fa-solid fa-utensils"></i><p>Proposer un restaurant</p>
         <i class="fa-solid fa-handshake-angle"></i><p>Devenir partenaire</p>
         <p>Mentions légales</p>
-        <p><a href="mailto: ohmyfood@gmail.com">Contact</a></p>
+        <p><a href="mailto:ohmyfood@gmail.com">Contact</a></p>
     </footer>    
 </body>
 </html>
