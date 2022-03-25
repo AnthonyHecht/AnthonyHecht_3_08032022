@@ -1,0 +1,16 @@
+@mixin tablette {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 993px) {
+        @content
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: 3px 3px 3px (darken($color: $background, $amount: 20%));
+}
+

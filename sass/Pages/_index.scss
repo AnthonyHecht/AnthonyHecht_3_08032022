@@ -1,0 +1,237 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f6f6f6a2;
+    animation: cssAnimation 0.01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 50;
+    & .spinner {
+        animation: rotator $duration linear infinite;
+        position: relative;
+        left: calc(50% - 65px / 2);
+        top: calc(50% - 65px / 2);
+    }
+    & .path {
+        stroke-dasharray: $offset;
+        stroke-dashoffset: 0;
+        transform-origin: center;
+        animation:
+          dash $duration ease-in-out infinite, 
+          colors ($duration*4) ease-in-out infinite;
+    }
+    
+}
+
+#localisation {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: rgb(236, 234, 234);
+    box-shadow: 0px 1px 3px rgb(194, 194, 194) inset ;
+    & i {
+        margin-right: 20px;
+    }
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 60px 0;
+    & h2 {
+        margin: 0 60px 10px 60px;
+        text-align: center;
+    }
+    & p {
+        margin: 0 30px 20px 30px;
+        text-align: center;
+        color: rgb(104, 104, 104);
+    }
+}
+
+aside {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    & h2 {
+        margin-left: 20px;
+        @include tablette {
+            margin-left: 60px;
+        }
+        @include desktop {
+            margin-left: 60px;
+        }
+    }
+}
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    @include tablette {
+        align-items: flex-start;
+        margin-left: 60px;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.fonction {
+    background-color: $background;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    font-weight: bold;
+    font-size: x-large;
+    padding: 30px 0 30px 0;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    @include box-shadow;
+    @include tablette {
+        width: 60%;
+    }
+    @include desktop {
+        width: 30%;
+    }
+    & .fa-solid {
+        margin-right: 30px;
+        margin-left: 25px;
+        color: rgb(104, 104, 104);
+    }
+    &:hover .fa-solid {
+        color: #9356dc;
+    }
+
+
+}
+
+.number {
+    background-color: #9356dc;
+    color: white;
+    font-weight: 100;
+    font-size: smaller;
+    text-align: center;
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    margin-left: -10px;
+    padding-top: 3px;
+}
+
+#resto_title {
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+/* #restaurants {
+    width: 100%;
+    @include tablette {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }    
+} */
+
+.card {
+    width: 90%;
+    height: 340px;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    border-radius: 20px;
+    position: relative;
+    @include box-shadow;
+    @include tablette {
+        width: 40%;
+    }
+    @include desktop {
+        width: 40%;
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+        border-radius: inherit;
+        height: 340px;
+    }
+    &_img {
+        width: 100%;
+        height: 260px;
+        border-radius: inherit;
+        & img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    & .new {
+        background-color: $tertiary;
+        color: darken($color: $tertiary, $amount: 35%);
+        width: 20%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @media screen and (max-width: 380px) {
+            font-size: 0.8em;
+        }
+    }
+    &_body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        &_title {
+            font-size: large;
+            & h3, p {
+                margin-bottom: 10px;
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.icons {
+    display: grid;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    & .icon {
+        fill: transparent;
+        stroke: black;
+        stroke-width: 30;
+        cursor: pointer;
+        position: relative;
+        & svg {
+            overflow: visible;
+            width: 2rem;
+        }
+        & .heart-main:hover {
+            animation: fill-animation 1000ms ease-in-out forwards;
+        }
+    }
+}
