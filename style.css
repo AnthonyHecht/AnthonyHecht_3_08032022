@@ -660,19 +660,38 @@ aside h2 {
   margin-top: 50px;
 }
 
-/* #restaurants {
-    width: 100%;
-    @include tablette {
-        display: flex;
-        flex-direction: row;
+#restaurants {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }
-    @include desktop {
-        display: flex;
-        flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    }    
-} */
+  }
+}
+
 .card {
   width: 90%;
   height: 340px;
