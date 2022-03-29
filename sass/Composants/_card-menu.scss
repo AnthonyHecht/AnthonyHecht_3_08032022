@@ -7,7 +7,10 @@
     @include box-shadow;
     overflow: hidden;
     cursor: pointer;
-    
+    animation: itemappear 2.5s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);    
     max-width: 100%;
     &_title {
         white-space: nowrap;
@@ -60,16 +63,23 @@
         align-items:center;
         justify-content:center;
         border-radius: 100px;
-        transform: rotate(180deg);
-        transition-duration: 800ms;
+        transform: rotate(90deg);
+        transition-duration: 500ms;
+        transition-delay: 250ms;
     }
 
     &:hover &_wrapicon {
-        transform: rotate(0);
+        transform: rotate(360deg);
     }
 
     &_icon {
         color: white;
-        font-size: 1.5rem;
+        font-size: 25px;
+    }
+}
+
+@for $i from 0 to 9 {
+    .delay-#{$i} {
+        animation-delay: #{$i/10}s;
     }
 }
