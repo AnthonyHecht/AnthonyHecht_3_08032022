@@ -54,11 +54,7 @@
 
 .menu {
     padding-left: 10px;
-    padding-right: 10px;
-    animation: itemappear 1s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
+    padding-right: 10px;    
     @include desktop {
         width: 30%;
         margin: auto;
@@ -66,11 +62,7 @@
     }
 }
 
-@for $i from 1 to 3 {
-    .delay-#{$i} {
-        animation-delay: #{$i/6}s;
-    }
-}
+
 
 .container {
     display: flex;
