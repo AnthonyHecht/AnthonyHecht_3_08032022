@@ -23,7 +23,7 @@
     }
 }
 
-.menus {
+.menus { /* div principal */
     width: 100%;
     background-color: $background;
     border-radius: 25px;
@@ -44,7 +44,7 @@
     }
 }
 
-.liste_menu {
+.liste_menu { /* div contenant les 3 menus */
     @include desktop {
         display: flex;
         flex-direction: row;
@@ -52,7 +52,7 @@
     }
 }
 
-.menu {
+.menu { /* div contenant les plats */
     padding-left: 10px;
     padding-right: 10px;    
     @include desktop {
@@ -64,7 +64,7 @@
 
 
 
-.container {
+.container { /* div bouton commander */
     display: flex;
     justify-content: center;
     align-items: center;

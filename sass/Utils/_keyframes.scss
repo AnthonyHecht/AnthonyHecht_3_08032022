@@ -1,3 +1,4 @@
+/* loading circle */
 @keyframes rotator {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(270deg); }
@@ -32,6 +33,7 @@
     }
 }
 
+/* heart animated */
 @keyframes fill-animation {
     0% {
         fill: url(#gradient);
@@ -70,6 +72,7 @@
     }
 }
 
+/* apparition des plats */
 @keyframes itemappear {
     0% {
       transform: scale(0)

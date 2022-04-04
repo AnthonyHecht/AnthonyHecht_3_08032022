@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/* couleurs */
+/* loading circle */
+/* media queries */
+/* box shadow */
+/* loading circle */
 @-webkit-keyframes rotator {
   0% {
     -webkit-transform: rotate(0deg);
@@ -8,7 +14,6 @@
             transform: rotate(270deg);
   }
 }
-
 @keyframes rotator {
   0% {
     -webkit-transform: rotate(0deg);
@@ -102,6 +107,7 @@
   }
 }
 
+/* heart animated */
 @-webkit-keyframes fill-animation {
   0% {
     fill: url(#gradient);
@@ -134,7 +140,6 @@
     stroke: none;
   }
 }
-
 @keyframes fill-animation {
   0% {
     fill: url(#gradient);
@@ -168,6 +173,7 @@
   }
 }
 
+/* apparition des plats */
 @-webkit-keyframes itemappear {
   0% {
     -webkit-transform: scale(0);
@@ -178,7 +184,6 @@
             transform: scale(1);
   }
 }
-
 @keyframes itemappear {
   0% {
     -webkit-transform: scale(0);
@@ -190,6 +195,7 @@
   }
 }
 
+/* polices */
 @font-face {
   font-family: 'roboto';
   src: url(polices/Roboto-Regular.ttf);
@@ -200,6 +206,7 @@
   src: url(polices/Shrikhand-Regular.otf);
 }
 
+/* margin padding clean */
 * {
   margin: 0;
   padding: 0;
@@ -217,6 +224,7 @@ a {
   text-decoration: none;
 }
 
+/* bouton + animation btn */
 .btn {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background-image: linear-gradient(#ff79da, #9356dc);
@@ -242,6 +250,7 @@ a {
           box-shadow: 6px 6px 4px #c3c3c3;
 }
 
+/* css des plats + animation appear et check */
 .plat {
   background-color: white;
   padding: 1rem;
@@ -303,6 +312,7 @@ a {
 }
 
 .plat_confirmation {
+  /* animation check */
   background-color: #99e2d0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
@@ -355,6 +365,7 @@ a {
   font-size: 25px;
 }
 
+/* animation appear */
 .delay-0 {
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
@@ -437,6 +448,7 @@ header {
 }
 
 .logo_header i {
+  /* i = icone retour index depuis pages */
   font-size: larger;
   margin-top: 10px;
   margin-left: 20px;
@@ -478,6 +490,7 @@ h2 {
   font-size: 1.8em;
 }
 
+/* même footer pour chaque pages */
 footer {
   background-color: #383636;
   color: white;
@@ -510,6 +523,7 @@ footer a {
   color: white;
 }
 
+/* loading circle + animation */
 #loading {
   position: fixed;
   width: 100%;
@@ -598,6 +612,7 @@ footer a {
   color: #686868;
 }
 
+/* aside = div contenant le fonctionnement */
 aside {
   background-color: white;
   padding-top: 40px;
@@ -719,6 +734,7 @@ aside h2 {
   padding-top: 3px;
 }
 
+/* liste des restaurant + cartes */
 #resto_title {
   margin-left: 5%;
   margin-top: 50px;
@@ -884,6 +900,7 @@ aside h2 {
   width: 100;
 }
 
+/* heart icon + animation */
 .icons {
   display: -ms-grid;
   display: grid;
@@ -953,6 +970,7 @@ aside h2 {
 }
 
 .menus {
+  /* div principal */
   width: 100%;
   background-color: #f6f6f6;
   border-radius: 25px;
@@ -975,6 +993,10 @@ aside h2 {
   border-bottom: 3px solid #99e2d0;
 }
 
+.liste_menu {
+  /* div contenant les 3 menus */
+}
+
 @media screen and (min-width: 993px) {
   .liste_menu {
     display: -webkit-box;
@@ -990,6 +1012,7 @@ aside h2 {
 }
 
 .menu {
+  /* div contenant les plats */
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1003,6 +1026,7 @@ aside h2 {
 }
 
 .container {
+  /* div bouton commander */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -1,3 +1,4 @@
+/* loading circle + animation */
 #loading {
     position: fixed;
     width: 100%;
@@ -60,7 +61,7 @@
         color: rgb(104, 104, 104);
     }
 }
-
+/* aside = div contenant le fonctionnement */
 aside {
     background-color: white;
     padding-top: 40px;
@@ -137,6 +138,7 @@ aside {
     padding-top: 3px;
 }
 
+/* liste des restaurant + cartes */
 #resto_title {
     margin-left: 5%;
     margin-top: 50px;
@@ -241,6 +243,7 @@ aside {
     width:100;
 }
 
+/* heart icon + animation */
 .icons {
     display: grid;
     width: 80px;
