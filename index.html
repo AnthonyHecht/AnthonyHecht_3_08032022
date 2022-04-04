@@ -1,184 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/bcdfd88b49.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-      integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
-      crossorigin="anonymous"
-    />
-    <title>OhMyFood</title>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/bcdfd88b49.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- cdn font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+            integrity="sha384-ejwKkLla8gPP8t2u0eQyL0Q/4ItcnyveF505U0NIobD/SMsNyXrLti6CWaD0L52l"
+            crossorigin="anonymous"
+        />
+        <!-- cdn bootstrap -->
+        <title>OhMyFood</title>
+    </head>
 
-  <body>
-    <div id="loading">
-      <svg
-        class="spinner"
-        viewBox="0 0 66 66"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <circle
-          class="path"
-          cx="33"
-          cy="33"
-          r="30"
-        ></circle>
-      </svg>
-    </div>
-    <header>
-      <h1 id="title_index">ohmyfood</h1>
-    </header>
-    <main>
-      <div id="localisation">
-        <i class="fa-solid fa-location-dot"></i>
-        <p>Paris, Belleville</p>
-      </div>
-      <div id="presentation">
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>
-          Découvrez des restaurants d'exception, séléctionnés par nos soins.
-        </p>
-        <a class="btn" href="#restaurants">Explorer nos restaurants</a>
-      </div>
-      <aside>
-        <h2>Fonctionnement</h2>
-        <div id="fonctionnement">
-          <div class="fonction">
-            <div class="number">1</div>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <p>Choisissez un restaurant</p>
-          </div>
-          <div class="fonction">
-            <div class="number">2</div>
-            <i class="fa-solid fa-list"></i>
-            <p>Composez votre menu</p>
-          </div>
-          <div class="fonction">
-            <div class="number">3</div>
-            <i class="fa-solid fa-store"></i>
-            <p>Dégustez au restaurant</p>
-          </div>
+    <body>
+        <div id="loading">      <!-- loading circle -->
+            <svg
+            class="spinner"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <circle
+                class="path"
+                cx="33"
+                cy="33"
+                r="30"
+            ></circle>
+            </svg>
         </div>
-      </aside>
-      <h2 id="resto_title">Restaurants</h2>
-      <section id="restaurants">
-        <div class="card">
-          <a href="page3.html">
-            <div class="card_img">
-              <img src="images/lapalette.png" alt="La palette du goût" />
+        <header>
+            <h1 id="title_index">ohmyfood</h1>  <!-- header index -->
+        </header>
+        <main>
+            <div id="localisation">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Paris, Belleville</p>
             </div>
-            <div class="new">Nouveau</div>
-            <div class="card_body">
-              <div class="card_body_title">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-              <div class="icons">
-                <div class="icon">
-                  <svg class="heart-main" viewBox="0 0 512 512">
-                    <defs>
-                      <linearGradient
-                        id="gradient" 
-                        gradientTransform="rotate(90)"                     
-                      >
-                        <stop offset="5%" stop-color="#9356dc" />
-                        <stop offset="95%" stop-color="#ff79da" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                    />
-                  </svg>
+            <div id="presentation">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>
+                    Découvrez des restaurants d'exception, séléctionnés par nos soins.
+                </p>
+                <a class="btn" href="#restaurants">Explorer nos restaurants</a>
+            </div>
+            <aside>                     <!-- fonctionnement site -->
+                <h2>Fonctionnement</h2>
+                <div id="fonctionnement">
+                    <div class="fonction">
+                        <div class="number">1</div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
+                    <div class="fonction">
+                        <div class="number">2</div>
+                        <i class="fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </div>
+                    <div class="fonction">
+                        <div class="number">3</div>
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
-              </div>
+            </aside>
+            <h2 id="resto_title">Restaurants</h2>
+            <section id="restaurants">      <!-- liste restaurants -->
+            <div class="card"> <!-- carte restaurant -->
+                <a href="page3.html">
+                    <div class="card_img"> <!-- div image -->
+                        <img src="images/lapalette.png" alt="La palette du goût" />
+                    </div>
+                        <div class="new">Nouveau</div> <!-- encadré nouveau -->
+                    <div class="card_body"> <!-- div encadrant texte et icone -->
+                        <div class="card_body_title"> <!-- intitulé de la carte -->
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="icons"> <!-- heart animated -->
+                            <div class="icon">
+                                <svg class="heart-main" viewBox="0 0 512 512">
+                                <defs>
+                                    <linearGradient
+                                    id="gradient" 
+                                    gradientTransform="rotate(90)"                     
+                                    >
+                                    <stop offset="5%" stop-color="#9356dc" />
+                                    <stop offset="95%" stop-color="#ff79da" />
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="page2.html">
-            <div class="card_img">
-              <img src="images/lanote.png" alt="La note enchantée" />
+            <div class="card">
+                <a href="page2.html">
+                    <div class="card_img">
+                        <img src="images/lanote.png" alt="La note enchantée" />
+                    </div>
+                        <div class="new">Nouveau</div>
+                    <div class="card_body">
+                        <div class="card_body_title">
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <svg class="heart-main" viewBox="0 0 512 512">
+                                <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="new">Nouveau</div>
-            <div class="card_body">
-              <div class="card_body_title">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-              </div>
-              <div class="icons">
-                <div class="icon">
-                  <svg class="heart-main" viewBox="0 0 512 512">
-                    <path
-                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                    />
-                  </svg>
-                </div>
-              </div>
+            <div class="card">
+                <a href="page1.html">
+                    <div class="card_img">
+                        <img src="images/alafrançaise.png" alt="À la française" />
+                    </div>
+                    <div class="card_body">
+                        <div class="card_body_title">
+                        <h3>À la française</h3>
+                        <p>Cité Rouge</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <svg class="heart-main" viewBox="0 0 512 512">
+                                <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="page1.html">
-            <div class="card_img">
-              <img src="images/alafrançaise.png" alt="À la française" />
+            <div class="card">
+                <a href="page4.html">
+                    <div class="card_img">
+                        <img src="images/ledelice.png" alt="Le délice des sens" />
+                    </div>
+                    <div class="card_body">
+                        <div class="card_body_title">
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="icons">
+                            <div class="icon">
+                                <svg class="heart-main" viewBox="0 0 512 512">
+                                <path
+                                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                                />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card_body">
-              <div class="card_body_title">
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-              </div>
-              <div class="icons">
-                <div class="icon">
-                  <svg class="heart-main" viewBox="0 0 512 512">
-                    <path
-                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="card">
-          <a href="page4.html">
-            <div class="card_img">
-              <img src="images/ledelice.png" alt="Le délice des sens" />
-            </div>
-            <div class="card_body">
-              <div class="card_body_title">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-              <div class="icons">
-                <div class="icon">
-                  <svg class="heart-main" viewBox="0 0 512 512">
-                    <path
-                      d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <h3>ohmyfood</h3>
-      <i class="fa-solid fa-utensils"></i>
-      <p>Proposer un restaurant</p>
-      <i class="fa-solid fa-handshake-angle"></i>
-      <p>Devenir partenaire</p>
-      <p>Mentions légales</p>
-      <p><a href="mailto:ohmyfood@gmail.com">Contact</a></p>
-    </footer>
-  </body>
+            </section>
+        </main>
+        <footer> <!-- footer copié collé sur les autres pages -->
+            <h3>ohmyfood</h3>
+            <i class="fa-solid fa-utensils"></i>
+            <p>Proposer un restaurant</p>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p>Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p><a href="mailto:ohmyfood@gmail.com">Contact</a></p>
+        </footer>
+    </body>
 </html>

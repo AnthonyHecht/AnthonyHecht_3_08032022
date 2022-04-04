@@ -1,3 +1,4 @@
+/* css des plats + animation appear et check */
 .plat {
     background-color: white;
     padding: 1rem;
@@ -41,7 +42,7 @@
         padding-left: 0.5rem;
     }
 
-    &_confirmation {
+    &_confirmation {    /* animation check */
         background-color: $tertiary;
         margin: -1rem -5rem -1rem 1rem;
         width: 4rem;
@@ -78,6 +79,7 @@
     }
 }
 
+/* animation appear */
 @for $i from 0 to 9 {
     .delay-#{$i} {
         animation-delay: #{$i/10}s;
